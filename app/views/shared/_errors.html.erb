@@ -1,0 +1,10 @@
+<% if obj.errors.any?%>
+
+<h2>Error: <%= obj.class.name.downcase %> cannot be created</h2>
+
+<% obj.errors.full_messages.each do |msg|%>
+  <ul>
+    <li><%= msg %></li>
+  </ul>
+  <% end %>
+<% end %>
