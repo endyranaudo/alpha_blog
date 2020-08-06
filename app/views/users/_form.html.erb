@@ -17,7 +17,7 @@
   </p>
 
   <p>
-    <%= f.submit "Sign up" %>
+    <%= f.submit( @user.new_record? ?  "Sign up" : "Update Profile") %>
   </p>
   <p>
     <%= link_to '[Cancel and returns to article listing]', articles_path %>
