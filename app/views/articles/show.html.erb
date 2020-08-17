@@ -1,6 +1,7 @@
-<h1>Showing article details</h1>
+<%# Showing article details %>
 
-<p><strong><%= @article.title %></strong></p>
+<h2><%= @article.title %></strong></h2>
+<p> by <%= @article.user.username if @article.user %> </p>
 <p><%= @article.description %></p>
 
 <p>
